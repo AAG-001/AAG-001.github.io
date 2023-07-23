@@ -476,7 +476,7 @@ mark,
 }
 
 .img-fluid {
-  max-width: 5%;
+  max-width: 10%;
   height: auto;
 }
 
@@ -3952,7 +3952,7 @@ input[type=button].btn-block {
 .navbar {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: inherit;
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 1rem;
