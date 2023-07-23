@@ -4003,6 +4003,11 @@ input[type=button].btn-block {
   padding-bottom: 0.5rem;
 }
 
+.navbar-img{
+	 display:flex;
+	 flex-wrap:nowrap;
+}
+
 .navbar-collapse {
   flex-basis: 100%;
   flex-grow: 1;
