@@ -10101,6 +10101,17 @@ p.lead {
   font-size: 3rem;
 }
 
+.project-icon {
+  display: inline-flex;
+  justify-content: center;
+  height: 4.5rem;
+  width: 4.5rem;
+  margin-right: 1.5rem;
+}
+
+.project-icon:hover {
+  opacity:0.5;
+}
 section.resume-section {
   display: flex;
   align-items: center;
