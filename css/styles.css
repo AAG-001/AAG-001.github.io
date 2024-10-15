@@ -4004,8 +4004,8 @@ input[type=button].btn-block {
 }
 
 .navbar-img{
-	 display:flex;
-	 flex-wrap:nowrap;
+  display:flex;
+  flex-wrap:nowrap;
 }
 
 .navbar-collapse {
@@ -10125,7 +10125,16 @@ section.resume-section {
   padding-top: 5rem;
   padding-bottom: 5rem;
   max-width: 75rem;
+  opacity: 0%;
+  transition: all 5s ease;
+  transform: translateY(-20px);
 }
+
+section.resume-section.visible {
+  opacity: 100%;
+  transform: translateY(0);
+}
+
 section.resume-section .resume-section-content {
   width: 100%;
 }
