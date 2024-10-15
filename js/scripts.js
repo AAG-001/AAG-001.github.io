@@ -35,6 +35,31 @@
         $(".navbar-collapse").collapse("hide");
     });
 
+
+    //on Load and Reload animation
+    $(window).on('load', function(){
+        var tags = $(".resume-section")
+        $(tags).addClass("visible")
+    });
+
+
+    //animation on scroll
+    $(document).on("scroll", function () {
+        var pageTop = $(document).scrollTop()
+        var pageBottom = pageTop + $(window).height() - 300
+        var tags = $(".resume-section")
+      
+        for (var i = 0; i < tags.length; i++) {
+          var tag = tags[i]
+      
+          if ($(tag).position().top < pageBottom) {
+            $(tag).addClass("visible")
+          } else {
+            $(tag).removeClass("visible")
+          }
+        }
+      });
+
     // Activate scrollspy to add active class to navbar items on scroll
     $("body").scrollspy({
         target: "#sideNav",
